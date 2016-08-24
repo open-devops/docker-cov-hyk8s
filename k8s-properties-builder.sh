@@ -37,13 +37,13 @@ dbusername=${HYGIEIA_API_ENV_SPRING_DATA_MONGODB_USERNAME:-db}
 #Database Password - default is blank
 dbpassword=${HYGIEIA_API_ENV_SPRING_DATA_MONGODB_PASSWORD:-dbpass}
 #Collector schedule (required)
-kubernetes.cron=${kubernetes_CRON:-0 0/5 * * * *}
+kubernetes.cron=${KUBERNETES_CRON:-0 0/5 * * * *}
 #kubernetes server (required) - Can provide multiple
-kubernetes.servers[0]=${kubernetes_URL:-http://kubernetes.company.com}
+kubernetes.servers[0]=${KUBERNETES_URL:-http://kubernetes.company.com}
 #kubernetes user name (required)
-kubernetes.username=${kubernetes_USERNAME:-bobama}
+kubernetes.username=${KUBERNETES_USERNAME:-bobama}
 #kubernetes password (required)
-kubernetes.password=${kubernetes_PASSWORD:-s3cr3t}
+kubernetes.password=${KUBERNETES_PASSWORD:-s3cr3t}
 EOF
 
 echo "
