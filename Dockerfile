@@ -18,4 +18,4 @@ WORKDIR /hygieia
 VOLUME ["/hygieia/logs"]
 
 CMD ./k8s-properties-builder.sh && \
-  java -jar k8s-collector*.jar --spring.config.location=/hygieia/hygieia-k8s-collector.properties
+  java -jar kubernetes-deployment-collector*.jar --spring.config.location=/hygieia/hygieia-k8s-collector.properties
